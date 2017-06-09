@@ -1,0 +1,112 @@
+#include <stdio.h>
+
+
+
+#include <stdlib.h>
+
+
+
+
+int main()
+
+
+
+{
+
+
+
+int numero, soma, contador, numMaior, numMenor;
+
+numero = 0;
+
+
+soma = 0;
+
+
+contador = 0;
+
+
+numMaior = 0;
+
+
+numMenor = 1000;
+
+printf("============================\n");
+
+
+printf("= Digite até chegar ao 100 =\n");
+
+
+printf("============================\n");
+
+
+
+while ((soma < 100)&&(contador < 13))
+
+
+
+{
+
+ printf("Digite um valor: ");
+
+
+   scanf("%d", &numero);
+
+
+   soma += numero;
+
+
+   contador += 1;
+
+
+       if(numero == 0)
+
+           
+
+{
+
+  break;
+
+           
+
+}
+
+
+
+       else if(numero>numMaior)
+
+       
+
+{
+
+
+
+           numMaior = numero;
+
+       
+
+}
+
+
+
+
+       else if(numero<numMenor)
+
+       
+
+{
+
+           numMenor = numero;
+
+       
+
+}
+
+printf("Menor numero digitado: %d \nMaior numero digitado: %d \nA soma dos numeros eh: %d \nA quantidade de loops foi: %d", numMenor, numMaior, soma, contador);
+
+
+return 0;
+
+
+
+}

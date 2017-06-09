@@ -1,0 +1,156 @@
+#include <stdio.h>
+
+
+
+#include <stdlib.h>
+
+
+
+
+int main()
+
+
+
+{
+
+int escolha, num1, soma, contador;
+
+   
+
+escolha     = 0;
+
+   
+num1        = 0;
+
+   
+soma        = 0;
+
+   
+contador    = 0;
+
+
+   
+do
+
+   
+
+{
+
+ printf("\n\t(1) Somar dois numeros \n\t(2) Somar tres numeros \n\t(3) Sair do programa\n\n\t");
+
+
+
+       scanf("%d", &escolha);
+
+
+   
+} while((escolha != 1)&&(escolha != 2)&&(escolha != 3));
+
+
+
+
+   switch(escolha){
+
+ case 1:
+
+
+
+
+       do
+
+
+
+       {
+
+
+
+       printf("Digite um valor: ");
+
+
+
+       scanf("%d", &num1);
+
+
+
+       soma = soma + num1;
+
+
+
+       contador = contador + 1;
+
+
+
+
+       }while (contador < 2);
+
+
+
+
+       printf("O resultado da soma entre dois numeros: %d", soma);
+
+
+
+       break;
+
+
+
+ case 2:
+
+
+
+
+       do
+
+
+
+       {
+
+
+
+       printf("\nDigite um valor: ");
+
+
+
+       scanf("%d", &num1);
+
+
+
+       soma = soma + num1;
+
+
+
+       contador = contador + 1;
+
+
+
+
+       }while (contador < 3);
+
+
+
+
+       printf("O resultado da soma entre tres numeros: %d", soma);
+
+
+
+       break;
+
+
+   default:
+
+
+
+       break;
+
+
+
+}
+
+
+
+       
+
+	return 0;
+
+
+}
